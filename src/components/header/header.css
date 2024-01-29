@@ -1,0 +1,15 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 80vw;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(209, 158, 90);
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        width: 100vw;
+    }
+}

@@ -3,7 +3,9 @@ import './navbar.css'
 export const Navbar = () => {
     return (
         <nav>
+            <ul>
 
+            </ul>
         </nav>
     )
 }

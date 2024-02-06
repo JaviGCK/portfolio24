@@ -1,7 +1,5 @@
 import { BsTranslate } from "react-icons/bs";
-import { PiPaintBrushHousehold } from "react-icons/pi";
-
-type IconType = typeof BsTranslate | typeof PiPaintBrushHousehold;
+import { PiPaintBrushBroad } from "react-icons/pi";
 
 export const dataNavbar = [
     {
@@ -22,10 +20,10 @@ export const dataNavbar = [
     },
     {
         id: 4,
-        name: BsTranslate as IconType
+        name: <BsTranslate />
     },
     {
         id: 5,
-        name: PiPaintBrushHousehold as IconType
+        name: <PiPaintBrushBroad />
     }
 ];

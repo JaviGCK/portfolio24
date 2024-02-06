@@ -1,0 +1,78 @@
+.menu {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.menu svg {
+    width: 40px;
+    height: 40px;
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    transition: transform 0.4s ease;
+}
+
+.menu .line {
+    transition: stroke-dashoffset 0.4s ease;
+    stroke: #000;
+    stroke-width: 6;
+    stroke-dasharray: 90 207;
+}
+
+.opened .line1 {
+    stroke-dashoffset: -134;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+}
+
+.opened .line3 {
+    stroke-dashoffset: -134;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-li {
+    padding: 0 20px;
+}
+
+@media (max-width: 900px) {
+    .navbar-li {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 775px) {
+    .menu {
+        display: block;
+    }
+
+    .navbar-list {
+        display: none;
+        position: absolute;
+        top: 10;
+        left: 0;
+        width: 100%;
+        background-color: #de7373;
+        padding: 20px;
+    }
+
+    .navbar-list.show {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

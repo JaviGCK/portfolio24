@@ -90,6 +90,7 @@
         opacity: 0;
         visibility: visible;
         animation: fadeIn 3s forwards;
+        background-color: white;
     }
 
     @keyframes fadeIn {

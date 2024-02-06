@@ -7,7 +7,7 @@ export const Logo = () => {
             <a className='logo-link' href="https://www.linkedin.com/in/javiergcdeveloper/" target="_blank" rel="noopener noreferrer">
                 <img className='logo-img' src={JaviImage} alt="Javi-img" />
 
-                <h2 className='logo-name'>Javier García Cabello</h2>
+                <h2 className='logo-name'>Javier García <span className='logo-name-span'>Cabello</span></h2>
             </a>
         </>
     )

@@ -1,15 +1,22 @@
 .header-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
     width: 80vw;
     padding: 5px 10px 5px 10px;
-    background-color: rgb(209, 158, 90);
+    background-color: white;
+    z-index: 999;
 }
 
 @media (max-width: 600px) {
     .header-container {
         width: 100vw;
+        left: 0;
+        transform: none;
     }
 }

@@ -1,4 +1,6 @@
 .home-container {
     margin-top: 10vh;
     background-color: aqua;
+    height: 800px;
+    width: 1000px;
 }

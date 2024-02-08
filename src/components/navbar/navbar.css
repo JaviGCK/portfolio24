@@ -43,6 +43,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar-li {
@@ -87,10 +88,14 @@
 
     .navbar-list.show {
         display: flex;
+        justify-content: center;
         opacity: 0;
         visibility: visible;
-        animation: fadeIn 3s forwards;
+        animation: fadeIn 1.3s forwards;
+        padding: 10px 50px;
+        font-size: 2rem;
         background-color: white;
+        -webkit-animation: fadeIn 1s forwards;
     }
 
     @keyframes fadeIn {

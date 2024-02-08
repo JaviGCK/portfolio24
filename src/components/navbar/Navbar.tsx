@@ -9,6 +9,13 @@ export const Navbar = () => {
         setMenuOpened(!menuOpened);
     };
 
+    const scrollToSection = (sectionId: any) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <nav>
             <button className={`menu ${menuOpened ? 'opened' : ''}`} onClick={toggleMenu} aria-label="Main Menu">
@@ -21,17 +28,18 @@ export const Navbar = () => {
             </button>
             {!menuOpened && (
                 <ul className="navbar-list">
-                    {dataNavbar.map(navItem =>
-                        <li key={navItem.id} className='navbar-li'>
+                    {dataNavbar.map(navItem => (
+                        <li key={navItem.id} className='navbar-li' onClick={() => scrollToSection(navItem.id)}>
                             {navItem.name}
                         </li>
-                    )}
+                    ))}
                 </ul>
             )}
+
             {menuOpened && (
                 <ul className={`navbar-list ${menuOpened ? 'show' : ''}`}>
                     {dataNavbarIcon.map(navItem =>
-                        <li key={navItem.id} className='navbar-li'>
+                        <li key={navItem.id} className='navbar-li' onClick={() => scrollToSection(navItem.id)}>
                             {navItem.name}
                         </li>
                     )}

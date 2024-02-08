@@ -2,6 +2,6 @@ import './proyects.css'
 
 export const Proyects = () => {
     return (
-        <section className='proyects-container'>Proyects</section>
+        <section id='proyects' className='proyects-container'>Proyects</section>
     )
 }

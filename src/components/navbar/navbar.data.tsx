@@ -6,19 +6,19 @@ import { PiPaintBrushBroad } from "react-icons/pi";
 
 export const dataNavbar = [
     {
-        id: 0,
+        id: 'home',
         name: 'Inicio'
     },
     {
-        id: 1,
+        id: 'proyects',
         name: 'Proyectos'
     },
     {
-        id: 2,
+        id: 'about',
         name: 'Sobre mí'
     },
     {
-        id: 3,
+        id: 'contact',
         name: 'Contacto'
     },
     {
@@ -33,19 +33,19 @@ export const dataNavbar = [
 
 export const dataNavbarIcon = [
     {
-        id: 0,
+        id: 'home',
         name: <HiOutlineHome />
     },
     {
-        id: 1,
+        id: 'proyects',
         name: <FiFolder />
     },
     {
-        id: 2,
+        id: 'about',
         name: <BiBookOpen />
     },
     {
-        id: 3,
+        id: 'contact',
         name: <FiMail />
     },
     {

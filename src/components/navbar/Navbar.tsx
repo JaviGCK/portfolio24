@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { MenuButton } from "./MenuButton";
-import { MenuList } from "./MenuList";
+import { MenuButton } from "../menus/MenuButton";
+import { MenuList } from "../menus/MenuList";
 import { dataNavbar, dataNavbarIcon } from "./navbar.data";
 import { scrollToSection, useScrollHandler } from "../../utils/scrollUtils";
 

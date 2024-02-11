@@ -1,5 +1,5 @@
-import { MenuListProps } from "./types";
-import './navbar.css'
+import { MenuListProps } from '../../types/menuTypes';
+import './menus.css'
 
 export const MenuList: React.FC<MenuListProps> = ({ menuOpened, activeNavItem, data, scrollToSection }) => (
     <ul className={`navbar-list ${menuOpened ? 'show' : ''}`}>

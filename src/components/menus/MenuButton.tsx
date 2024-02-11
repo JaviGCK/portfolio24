@@ -1,5 +1,5 @@
-import { MenuButtonProps } from "./types";
-import './navbar.css'
+import { MenuButtonProps } from '../../types/menuTypes';
+import './menus.css'
 
 export const MenuButton: React.FC<MenuButtonProps> = ({ menuOpened, toggleMenu }) => (
     <button className={`menu ${menuOpened ? 'opened' : ''}`} onClick={toggleMenu} aria-label="Main Menu">

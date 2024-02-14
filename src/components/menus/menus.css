@@ -51,7 +51,7 @@
 }
 
 .navbar-li {
-    padding: 0 20px;
+    padding: 0 25px;
 }
 
 .navbar-li:hover {
@@ -60,6 +60,12 @@
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
+}
+
+@media (max-width: 1100px) {
+    .navbar-li {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 900px) {

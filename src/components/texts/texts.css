@@ -1,0 +1,69 @@
+.container-introduction {
+    margin-top: 14vh;
+}
+
+.introduction-title2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.introduction-title {
+    font-size: 7rem;
+    font-weight: bold;
+    color: #c70038;
+}
+
+.introduction-paragraph {
+    font-size: 1.8rem;
+    color: #747171;
+}
+
+@media (max-width: 1050px) {
+    .introduction-title2 {
+        font-size: 1.8rem;
+    }
+
+    .introduction-title {
+        font-size: 6rem;
+    }
+
+    .introduction-paragraph {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-introduction {
+        margin-top: 10vh;
+    }
+
+    .introduction-title2 {
+        font-size: 1.3rem;
+    }
+
+    .introduction-title {
+        font-size: 4rem;
+    }
+
+    .introduction-paragraph {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-introduction {
+        margin-top: 8vh;
+    }
+
+    .introduction-title2 {
+        font-size: 1rem;
+    }
+
+    .introduction-title {
+        font-size: 3rem;
+    }
+
+    .introduction-paragraph {
+        font-size: 1rem;
+    }
+}

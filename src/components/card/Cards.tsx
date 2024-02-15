@@ -3,14 +3,16 @@ import './cards.css'
 
 export const Cards = () => {
     return (
-        <section className='container-card'>
+        <section className='container-cards-proyects'>
             {cardsData.map(card => (
-                <div key={card.id}>
+                <div key={card.id} className='container-card'>
                     <header className='header-card'>
                         <h2 className='name-card'>{card.name}</h2>
                         <span className='iconDevice-card'>{card.iconDevice}</span>
                     </header>
-                    <img className='img-card' src={card.img} alt={card.name} />
+                    <div className='container-img-card'>
+                        <img className='img-card' src={card.img} alt={card.name} />
+                    </div>
                     <div className='container-tech-icon-card'>
                         <ul className='ul-card'>
                             {card.icons.map((icon, index) => (
@@ -22,10 +24,10 @@ export const Cards = () => {
                     </div>
                     <p className='description-card'>{card.description}</p>
                     <nav className='container-links-card'>
-                        <ul className='ul-card'>
+                        <ul className='ul-card-links'>
                             {card.iconsNav.map((icon, index) => (
                                 <li key={index} className='li-links-card'>
-                                    <a href={card.urls[index]} target="_blank" rel="noopener noreferrer">{icon}</a>
+                                    <a href={card.urls[index]} className='li-links-a-card' target="_blank" rel="noopener noreferrer">{icon}</a>
                                 </li>
                             ))}
                         </ul>

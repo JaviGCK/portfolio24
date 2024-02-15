@@ -22,3 +22,9 @@
     text-decoration: none;
     color: #747171;
 }
+
+@media (max-width: 480px) {
+    .container-socialMedia {
+        height: 150px;
+    }
+}

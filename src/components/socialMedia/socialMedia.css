@@ -33,13 +33,39 @@
     }
 }
 
+@media (max-width: 650px) {
+    .ul-socialMedia {
+        margin: 6vh;
+    }
+    .li-socialMedia {
+        font-size: 1rem;
+        padding: 30px;
+    }
+}
+
 @media (max-width: 550px) {
+    .ul-socialMedia {
+        margin: 4vh;
+    }
+    .li-socialMedia {
+        font-size: 1rem;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .ul-socialMedia {
+        margin: 1vh;
+    }
     .li-socialMedia {
         font-size: 1rem;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
+    .ul-socialMedia {
+        margin: 0;
+    }
     .li-socialMedia {
         font-size: 1rem;
     }

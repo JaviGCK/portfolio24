@@ -1,5 +1,5 @@
 import './logo.css';
-import JaviImage from '../../assets/images/Javi1-1.jpg';
+import JaviImage from '../../assets/images/Javi1-1-removebg-preview.webp';
 import { socialMediaData } from '../socialMedia/socialMedia.data';
 
 export const Logo = () => {

@@ -3,6 +3,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
     width: 100%;
+    margin-bottom: 125px;
 }
 
 .container-card {
@@ -77,6 +78,33 @@
 .li-links-a-card {
     text-decoration: none;
     color: #747171;
+}
+
+.icon-container {
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: auto;
+    border: solid 1px #c70038;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: #747171;
+    color: #fff;
+}
+
+.icon-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
 @media (max-width: 800px) {

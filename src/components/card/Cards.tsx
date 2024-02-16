@@ -1,11 +1,11 @@
-import { cardsData } from './Cards.data';
+import { cardsData } from './cards.data';
 import './cards.css'
 
 export const Cards = () => {
     return (
         <section className='container-cards-proyects'>
             {cardsData.map(card => (
-                <div key={card.id} className='container-card'>
+                <article key={card.id} className='container-card'>
                     <header className='header-card'>
                         <h2 className='name-card'>{card.name}</h2>
                         <span className='iconDevice-card'>{card.iconDevice}</span>
@@ -27,12 +27,18 @@ export const Cards = () => {
                         <ul className='ul-card-links'>
                             {card.iconsNav.map((icon, index) => (
                                 <li key={index} className='li-links-card'>
-                                    <a href={card.urls[index]} className='li-links-a-card' target="_blank" rel="noopener noreferrer">{icon}</a>
+                                    <a href={card.urls[index]} className='li-links-a-card' target="_blank" rel="noopener noreferrer">
+                                        <div className="icon-container" aria-label={card.labels[index]}>
+                                            {icon}
+                                            <div className="tooltip">{card.labels[index]}</div>
+                                        </div>
+                                    </a>
                                 </li>
                             ))}
                         </ul>
+
                     </nav>
-                </div>
+                </article>
             ))}
         </section>
     );

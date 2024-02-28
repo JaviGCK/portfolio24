@@ -37,7 +37,18 @@
 @media (max-width: 1050px) {
     .tecnologys-container {
         width: 80vw;
+    }
+
+    .tecnologys-title {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .tech-container {
+        gap: 20px 5px;
     }
 }

@@ -1,5 +1,18 @@
 .about-container {
-    background-color: rgb(213, 232, 232);
-    height: 800px;
     width: 80vw;
+}
+
+.about-container-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-bottom: 125px;
+}
+
+@media (max-width: 1000px) {
+    .about-container-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

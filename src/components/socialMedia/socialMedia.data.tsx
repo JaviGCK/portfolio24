@@ -22,5 +22,5 @@ export const socialMediaData = [
         icon: <BsFileEarmarkText />,
         url: "https://drive.google.com/file/d/1RVHosjxRWQ5e93UdQANpp96Y5XBA6__A/view?usp=sharing",
         label: "Descargar CV",
-    },
+    }
 ];

@@ -21,6 +21,7 @@
 .container-introduction {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 250px;
 }
 
@@ -33,6 +34,8 @@
 .introduction-paragraph {
     font-size: 1.2rem;
     color: #747171;
+    width: 80vw;
+    text-align: left;
 }
 
 .container-introduction-self {

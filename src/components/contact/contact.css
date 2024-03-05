@@ -16,7 +16,7 @@
 
 .contact-item {
     list-style: none;
-    position: relative; /* Asegura que el tooltip sea relativo a este elemento */
+    position: relative;
 }
 
 .contact-item a {

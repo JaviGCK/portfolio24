@@ -15,12 +15,35 @@
 
 .li-socialMedia {
     padding: 30px;
+    position: relative;
 }
 
 .logo-link-social {
     font-size: 2rem;
     text-decoration: none;
     color: #747171;
+}
+
+.socialMedia-tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
+    border: 1px solid #c70038;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    color: #fff;
+}
+
+.li-socialMedia:hover .socialMedia-tooltip {
+    visibility: visible;
+}
+
+.socialMedia-tooltip span {
+    font-size: 14px;
 }
 
 @media (max-width: 480px) {

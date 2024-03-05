@@ -11,6 +11,9 @@ export const SocialMedia: React.FC<SocialMediaProps> = ({ data }) => {
                         <a className='logo-link-social' href={socialItem.url} target="_blank" rel="noopener noreferrer" aria-label={socialItem.label}>
                             {socialItem.icon}
                         </a>
+                        <div className='socialMedia-tooltip'>
+                            {socialItem.platform}
+                        </div>
                     </li>
 
                 )}

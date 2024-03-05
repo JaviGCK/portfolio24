@@ -11,6 +11,9 @@ const ContactLinks = () => {
                         <a href={contact.info} target="_blank" rel="noopener noreferrer">
                             {contact.icon}
                         </a>
+                        <div className='contact-tooltip'>
+                            {contact.platform}
+                        </div>
                     </div>
                 ))}
             </nav>

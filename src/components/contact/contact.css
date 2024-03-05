@@ -16,14 +16,11 @@
 
 .contact-item {
     list-style: none;
+    position: relative; /* Asegura que el tooltip sea relativo a este elemento */
 }
 
 .contact-item a {
     text-decoration: none;
-}
-
-.contact-name {
-    display: none;
 }
 
 .contact-item svg {
@@ -32,9 +29,26 @@
     color: gray;
 }
 
-.contact-item span {
-    color: gray;
-    font-size: 16px;
+.contact-tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
+    border: 1px solid #c70038;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    color: #fff;
+}
+
+.contact-item:hover .contact-tooltip {
+    visibility: visible;
+}
+
+.contact-tooltip span {
+    font-size: 14px;
 }
 
 @media (max-width: 700px) {

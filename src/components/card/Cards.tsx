@@ -1,7 +1,9 @@
-import { cardsData } from './cards.data';
-import './cards.css'
+import { Cards } from './cards.data';
+import './cards.css';
 
-export const Cards = () => {
+export const CardsComponent = () => {
+    const cardsData = Cards();
+
     return (
         <section className='container-cards-proyects'>
             {cardsData.map(card => (
@@ -36,7 +38,6 @@ export const Cards = () => {
                                 </li>
                             ))}
                         </ul>
-
                     </nav>
                 </article>
             ))}

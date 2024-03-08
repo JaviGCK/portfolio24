@@ -1,18 +1,20 @@
+import { useTranslation } from 'react-i18next';
 import './texts.css';
 
 export const IntroductionHome = () => {
+    const { t } = useTranslation();
+
     return (
         <article className='container-introduction-home'>
             <header>
-                <h2 className='introduction-title2-home'>HOLA, SOY JAVI.</h2>
-                <h1 className='introduction-title-home'>Creador web.</h1>
+                <h2 className='introduction-title2-home'>{t('introduction.title2')}</h2>
+                <h1 className='introduction-title-home'>{t('introduction.title')}</h1>
             </header>
             <p className='introduction-paragraph-home'>
-                Soy un apasionado Desarrollador Frontend y estudiante de diseño UX/UI.
-                Mi enfoque está en crear interfaces de usuario excepcionales, fusionando
-                entusiasmo y creatividad en cada proyecto.
+                {t('introduction.paragraph')}
             </p>
         </article>
     );
 };
+
 

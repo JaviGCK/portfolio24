@@ -1,26 +1,26 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// Importa tus archivos de traducción
+
 import translationEN from '../locales/en/translation.json';
 import translationES from '../locales/es/translation.json';
 
-// Configura i18next
+
 i18n
-    .use(initReactI18next) // Inicializa i18next
+    .use(initReactI18next)
     .init({
         resources: {
             en: {
-                translation: translationEN // Traducciones en inglés
+                translation: translationEN
             },
             es: {
-                translation: translationES // Traducciones en español
+                translation: translationES
             }
         },
-        lng: 'en', // Establece el idioma predeterminado
-        fallbackLng: 'en', // Define el idioma de respaldo
+        lng: 'en',
+        fallbackLng: 'en',
         interpolation: {
-            escapeValue: false // No es necesario escapar los valores
+            escapeValue: false
         }
     });
 

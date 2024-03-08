@@ -1,5 +1,4 @@
 import { BiBookOpen } from "react-icons/bi";
-import { BsTranslate } from "react-icons/bs";
 import { FiFolder, FiMail } from "react-icons/fi";
 import { HiOutlineHome } from "react-icons/hi";
 import { PiPaintBrushBroad } from "react-icons/pi";

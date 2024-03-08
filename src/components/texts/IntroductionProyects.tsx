@@ -1,13 +1,18 @@
-import './texts.css'
+import './texts.css';
+import { useTranslation } from 'react-i18next';
 
 export const IntroductionProyects = () => {
+    const { t } = useTranslation();
+
     return (
         <article className='container-introduction'>
             <div>
                 <header className='header-introduction'>
-                    <h2 className='introduction-title'>PROYECTOS <span className='introduction-span'>DESTACADOS</span></h2>
+                    <h2 className='introduction-title'>
+                        {t('introduction.projects.title')} <span className='introduction-span'>{t('introduction.projects.highlighted')}</span>
+                    </h2>
                 </header>
-                <p className='introduction-paragraph'>En este espacio, compartiré proyectos personales y de clientes, así como experimentos que me han ayudado a perfeccionar mis habilidades.</p>
+                <p className='introduction-paragraph'>{t('introduction.projects.description')}</p>
             </div>
         </article>
     )

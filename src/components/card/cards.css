@@ -7,7 +7,10 @@
 }
 
 .container-card {
+    position: relative;
     border: solid 1px #c70038;
+    margin-bottom: 20px;
+    min-height: 650px;
 }
 
 .header-card {
@@ -26,9 +29,11 @@
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
+    height: 250px;
 }
 
 .img-card {
+    width: 100vw;
     padding: 15px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -60,18 +65,20 @@
 }
 
 .container-links-card {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     padding: 15px;
 }
 
 .ul-card-links {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     list-style: none;
 }
 
 .li-links-card {
-    padding: 0 0 0 15px;
+    margin-top: 10px;
     font-size: 1.2rem;
 }
 
@@ -82,6 +89,7 @@
 
 .icon-container {
     position: relative;
+    padding: 10px;
 }
 
 .tooltip {

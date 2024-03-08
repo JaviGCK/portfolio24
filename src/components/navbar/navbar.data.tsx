@@ -3,27 +3,28 @@ import { BsTranslate } from "react-icons/bs";
 import { FiFolder, FiMail } from "react-icons/fi";
 import { HiOutlineHome } from "react-icons/hi";
 import { PiPaintBrushBroad } from "react-icons/pi";
+import LanguageButton from "../buttons/LanguajeButton";
 
 export const dataNavbar = [
     {
         id: 'home',
-        name: 'Inicio'
+        name: 'menu.home'
     },
     {
         id: 'proyects',
-        name: 'Proyectos'
+        name: 'menu.projects'
     },
     {
         id: 'about',
-        name: 'Sobre mí'
+        name: 'menu.about'
     },
     {
         id: 'contact',
-        name: 'Contacto'
+        name: 'menu.contact'
     },
     {
         id: 4,
-        name: <BsTranslate />
+        name: <LanguageButton />
     },
     {
         id: 5,
@@ -50,7 +51,7 @@ export const dataNavbarIcon = [
     },
     {
         id: 4,
-        name: <BsTranslate />
+        name: <LanguageButton />
     },
     {
         id: 5,

@@ -1,4 +1,4 @@
-import { CardsComponent } from '../card/Cards'
+import { CardsComponent } from '../card/CardsComponent'
 import { Line } from '../line/Line'
 import { IntroductionProyects } from '../texts/IntroductionProyects'
 import './proyects.css'

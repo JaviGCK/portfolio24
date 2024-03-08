@@ -8,7 +8,7 @@ import { SlSocialGithub } from 'react-icons/sl';
 import { HiMiniArrowTopRightOnSquare } from 'react-icons/hi2';
 import { BiLogoCss3, BiLogoMongodb, BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi';
 
-export const Cards = () => {
+export const CardsData = () => {
     const { t } = useTranslation();
 
     return [

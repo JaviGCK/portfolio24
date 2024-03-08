@@ -1,8 +1,8 @@
-import { Cards } from './cards.data';
+import { CardsData } from './CardsData';
 import './cards.css';
 
 export const CardsComponent = () => {
-    const cardsData = Cards();
+    const cardsData = CardsData();
 
     return (
         <section className='container-cards-proyects'>

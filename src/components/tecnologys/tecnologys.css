@@ -28,6 +28,11 @@
     font-size: 1.8rem;
 }
 
+.visible {
+    animation: fadeInFromLeft 3s ease forwards;
+    -webkit-animation: fadeInFromLeft 3s ease forwards;
+}
+
 .tech-name {
     margin-top: 10px;
     font-size: 0.7em;
@@ -50,5 +55,16 @@
 @media (max-width: 500px) {
     .tech-container {
         gap: 20px 5px;
+    }
+}
+
+@keyframes fadeInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

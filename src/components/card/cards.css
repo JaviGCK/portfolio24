@@ -10,7 +10,6 @@
     position: relative;
     border: solid 1px #c70038;
     margin-bottom: 20px;
-    min-height: 650px;
 }
 
 .header-card {
@@ -48,7 +47,7 @@
 
 .ul-card {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
     padding: 0;
@@ -62,12 +61,12 @@
 .description-card {
     padding: 15px;
     color: #747171;
+    min-height: 220px;
 }
 
 .container-links-card {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    display: flex;
+    justify-content: end;
     padding: 15px;
 }
 

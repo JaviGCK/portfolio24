@@ -35,9 +35,12 @@
     "introduction.self.description10": " con la empatía como guía para soluciones eficientes y elegantes. Fuera del trabajo, disfruto del tiempo con amigos y soy un amante de la naturaleza y los deportes. También tengo un profundo amor por los animales. Abierto a oportunidades laborales para contribuir, aprender y crecer. Si tienes una buena oportunidad que valore tanto la tecnología como el diseño, ¡contáctame!",
     "cards.APOLOFY.name": "APOLOFY",
     "cards.MOVIESHUB.name": "MOVIESHUB",
+    "cards.RICK&MORTY.name": "RICK & MORTY",
     "cards.APOLOFY.description": "Bienvenido a Apollofy, un proyecto fullstack que fusiona la sofisticación de Spotify con la versatilidad de SoundCloud, ofreciendo un reproductor de música personalizado. Desarrollado con MERN Stack (MongoDB, Express, React y Node.js), Apollofy va más allá al permitir a los usuarios no solo disfrutar de la música, sino también gestionar su propia biblioteca, subir canciones, seguir a otros usuarios, crear álbumes personalizados y mucho más. Explora Apollofy y descubre una nueva forma de experimentar la música en línea.",
     "cards.MOVIESHUB.description": "Bienvenido a MoviesHub! Un emocionante proyecto fullstack creado con Next.js, CSS, MongoDB, Node.js y Express. En MoviesHub, tú tomas el control de tu propia experiencia cinematográfica. Sube, modifica y elimina tus películas favoritas con facilidad. Personaliza cada entrada con descripciones detalladas, puntuaciones e imágenes llamativas.",
+    "cards.RICK&MORTY.description": "Bienvenido a Rick y Morty Explorer, un proyecto emocionante desarrollado con TypeScript, npm y Bootstrap. Esta aplicación te sumerge en el fascinante universo de la serie animada Rick & Morty, permitiéndote explorar detalles fascinantes sobre cada episodio y personaje.",
     "cards.labels.verFigma": "Ver Figma",
     "cards.labels.verGitHub": "Ver GitHub",
-    "cards.labels.verDeploy": "Ver Deploy"
+    "cards.labels.verDeploy": "Ver Deploy",
+    "tecnologys.title": "HABILIDADES TÉCNICAS"
 }

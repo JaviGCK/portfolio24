@@ -5,14 +5,14 @@ import { SlSocialLinkedin } from 'react-icons/sl';
 export const contactData = [
     {
         id: 0,
-        platform: "Teléfono",
+        platform: "Phone",
         icon: <PiPhoneCall />,
         info: "tel:+34663033843",
         label: "Llamar",
     },
     {
         id: 1,
-        platform: "Email",
+        platform: "Mail",
         icon: <MdOutlineAttachEmail />,
         info: "mailto:javigcpgr@gmail.com",
         label: "Enviar Correo Electrónico",

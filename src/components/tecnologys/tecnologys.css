@@ -22,6 +22,7 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
+    visibility: hidden;
 }
 
 .tech-item svg {
@@ -29,8 +30,9 @@
 }
 
 .visible {
-    animation: fadeInFromLeft 3s ease forwards;
-    -webkit-animation: fadeInFromLeft 3s ease forwards;
+    animation: diagonalFadeIn 3s ease forwards;
+    -webkit-animation: diagonalFadeIn 3s ease forwards;
+    visibility: visible;
 }
 
 .tech-name {
@@ -58,13 +60,13 @@
     }
 }
 
-@keyframes fadeInFromLeft {
+@keyframes diagonalFadeIn {
     0% {
         opacity: 0;
-        transform: translateX(-20px);
+        transform: translate(-20px, -20px);
     }
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translate(0, 0);
     }
 }

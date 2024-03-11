@@ -21,7 +21,7 @@
 .logo-link-social {
     font-size: 2rem;
     text-decoration: none;
-    color: #747171;
+    color: var(--gray-color);
 }
 
 .socialMedia-tooltip {
@@ -30,12 +30,12 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: gray;
-    border: 1px solid #c70038;
+    background-color: var(--gray-color);
+    border: 1px solid var(--red-color);
     padding: 10px;
     border-radius: 5px;
     z-index: 1;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .li-socialMedia:hover .socialMedia-tooltip {

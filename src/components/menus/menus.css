@@ -1,5 +1,5 @@
 .active {
-    color: red;
+    color: var(--red-color);
 }
 
 .menu {
@@ -15,14 +15,14 @@
     width: 40px;
     height: 40px;
     fill: none;
-    stroke: #000;
+    stroke: var(--black-color);
     stroke-width: 4;
     transition: transform 0.4s ease;
 }
 
 .menu .line {
     transition: stroke-dashoffset 0.4s ease;
-    stroke: #000;
+    stroke: var(--black-color);
     stroke-width: 6;
     stroke-dasharray: 90 207;
 }
@@ -104,7 +104,7 @@
         animation: fadeIn 1.3s forwards;
         padding: 10px 50px;
         font-size: 2rem;
-        background-color: white;
+        background-color: var(--white-color);
         -webkit-animation: fadeIn 1s forwards;
     }
 

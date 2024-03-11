@@ -8,7 +8,7 @@
 
 .container-card {
     position: relative;
-    border: solid 1px #c70038;
+    border: solid 1px var(--red-color);
     margin-bottom: 20px;
 }
 
@@ -55,12 +55,12 @@
 
 .li-tech-icon-card {
     font-size: 2rem;
-    color: #c70038;
+    color: var(--red-color);
 }
 
 .description-card {
     padding: 15px;
-    color: #747171;
+    color: var(--gray-color);
     min-height: 220px;
 }
 
@@ -83,7 +83,7 @@
 
 .li-links-a-card {
     text-decoration: none;
-    color: #747171;
+    color: var(--gray-color);
 }
 
 .icon-container {
@@ -94,7 +94,7 @@
 .tooltip {
     visibility: hidden;
     width: auto;
-    border: solid 1px #c70038;
+    border: solid 1px var(--red-color);
     text-align: center;
     padding: 5px;
     border-radius: 5px;
@@ -105,8 +105,8 @@
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s;
-    background-color: #747171;
-    color: #fff;
+    background-color: var(--gray-color);
+    color: var(--white-color);
 }
 
 .icon-container:hover .tooltip {

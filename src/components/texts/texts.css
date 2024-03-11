@@ -10,12 +10,12 @@
 .introduction-title-home {
     font-size: 7rem;
     font-weight: bold;
-    color: #c70038;
+    color: var(--red-color);
 }
 
 .introduction-paragraph-home {
     font-size: 1.8rem;
-    color: #747171;
+    color: var(--gray-color);
 }
 
 .container-introduction {
@@ -33,7 +33,7 @@
 
 .introduction-paragraph {
     font-size: 1.2rem;
-    color: #747171;
+    color: var(--gray-color);
     width: 80vw;
     text-align: left;
 }
@@ -48,7 +48,7 @@
 
 .introduction-span-self {
     font-weight: 800;
-    color: #c70038;
+    color: var(--red-color);
 }
 
 @media (max-width: 1050px) {

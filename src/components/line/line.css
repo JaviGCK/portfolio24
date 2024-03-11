@@ -1,6 +1,6 @@
 .line {
     width: 70%;
     height: 2px;
-    background-color: #c70038;
+    background-color: var(--red-color);
     margin: auto;
 }

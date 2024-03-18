@@ -51,3 +51,10 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root {
+  --white-color: #f1f1f1;
+  --black-color: #010101;
+  --red-color: #c70038;
+  --gray-color: #747171;
+}

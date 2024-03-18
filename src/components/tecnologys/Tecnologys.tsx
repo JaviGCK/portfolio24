@@ -8,7 +8,7 @@ export const Tecnologys = () => {
     const tecnologysRef = useRef<HTMLDivElement>(null);
     const [isVisible, setIsVisible] = useState(false);
     const [visibleItems, setVisibleItems] = useState<string[]>([]);
-    const [viewportWidth, setViewportWidth] = useState(window.innerWidth); // Obtener el ancho del viewport
+    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -67,24 +67,24 @@ export const Tecnologys = () => {
             }
         };
 
-
         const timerSet = setTechGroups();
 
         return () => {
             timerSet.forEach(timer => clearTimeout(timer));
         };
-    }, [viewportWidth]); // Dependencia del ancho del viewport
+    }, [viewportWidth]);
 
     const handleResize = () => {
-        setViewportWidth(window.innerWidth); // Actualizar el ancho del viewport cuando cambie el tamaño de la ventana
+        setViewportWidth(window.innerWidth);
     };
 
     useEffect(() => {
-        window.addEventListener('resize', handleResize); // Agregar listener para cambios en el tamaño de la ventana
+        window.addEventListener('resize', handleResize);
         return () => {
-            window.removeEventListener('resize', handleResize); // Remover el listener al desmontar el componente
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
+
 
     return (
         <section className='tecnologys-container' ref={tecnologysRef}>

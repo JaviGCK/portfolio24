@@ -1,7 +1,6 @@
 import { BiBookOpen } from "react-icons/bi";
 import { FiFolder, FiMail } from "react-icons/fi";
 import { HiOutlineHome } from "react-icons/hi";
-import { PiPaintBrushBroad } from "react-icons/pi";
 import LanguageButton from "../buttons/LanguajeButton";
 
 export const dataNavbar = [
@@ -24,10 +23,6 @@ export const dataNavbar = [
     {
         id: 4,
         name: <LanguageButton />
-    },
-    {
-        id: 5,
-        name: <PiPaintBrushBroad />
     }
 ];
 
@@ -51,10 +46,6 @@ export const dataNavbarIcon = [
     {
         id: 4,
         name: <LanguageButton />
-    },
-    {
-        id: 5,
-        name: <PiPaintBrushBroad />
     }
 ];
 

@@ -7,9 +7,9 @@
 }
 
 .container-card {
-    position: relative;
     border: solid 1px var(--red-color);
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-card {
@@ -61,13 +61,13 @@
 .description-card {
     padding: 15px;
     color: var(--gray-color);
-    min-height: 220px;
 }
 
 .container-links-card {
     display: flex;
     justify-content: end;
     padding: 15px;
+    margin-top: auto;
 }
 
 .ul-card-links {

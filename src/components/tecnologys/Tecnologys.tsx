@@ -72,7 +72,7 @@ export const Tecnologys = () => {
         return () => {
             timerSet.forEach(timer => clearTimeout(timer));
         };
-    }, [viewportWidth]);
+    }, [isVisible]);
 
     const handleResize = () => {
         setViewportWidth(window.innerWidth);

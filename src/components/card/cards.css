@@ -120,3 +120,16 @@
         flex-direction: column;
     }
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 3s ease,
+        transform 3s ease;
+}
+
+.fade-in.isVisible {
+    opacity: 1;
+    transform: translateY(0);
+}

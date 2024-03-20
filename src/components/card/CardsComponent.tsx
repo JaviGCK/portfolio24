@@ -1,11 +1,13 @@
 import { CardsData } from './CardsData';
 import './cards.css';
+import useVisibility from '../../utils/hooks/useVisibility';
 
 export const CardsComponent = () => {
     const cardsData = CardsData();
+    const { isVisible, ref } = useVisibility();
 
     return (
-        <section className='container-cards-proyects'>
+        <section className={`container-cards-proyects fade-in ${isVisible ? 'isVisible' : ''}`} ref={ref}>
             {cardsData.map(card => (
                 <article key={card.id} className='container-card'>
                     <header className='header-card'>

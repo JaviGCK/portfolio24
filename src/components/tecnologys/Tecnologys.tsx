@@ -1,41 +1,20 @@
-import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+
 import './tecnologys.css';
 import { dataTech } from './tecnologys.data';
+import useVisibility from '../../utils/hooks/useVisibility';
+import { useEffect, useState } from 'react';
 
 export const Tecnologys = () => {
     const { t } = useTranslation();
-    const tecnologysRef = useRef<HTMLDivElement>(null);
-    const [isVisible, setIsVisible] = useState(false);
+    const { isVisible, ref: tecnologysRef } = useVisibility();
     const [visibleItems, setVisibleItems] = useState<string[]>([]);
     const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                } else {
-                    setIsVisible(false);
-                }
-            });
-        });
-
-        if (tecnologysRef.current) {
-            observer.observe(tecnologysRef.current);
-        }
-
-        return () => {
-            if (tecnologysRef.current) {
-                observer.unobserve(tecnologysRef.current);
-            }
-        };
-    }, []);
-
-    useEffect(() => {
         const setTechGroups = () => {
             setVisibleItems([]);
-            if (viewportWidth >= 1285) { // grid 5 columns
+            if (viewportWidth >= 1285) {
                 const timer1 = setTimeout(() => setVisibleItems(['html']), 375);
                 const timer2 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'ts', 'css']), 750);
                 const timer3 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'auth0', 'react', 'bootstrap']), 1125);
@@ -45,7 +24,7 @@ export const Tecnologys = () => {
                 const timer7 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'vscode', 'jenkin']), 2625);
                 const timer8 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'postman']), 3000);
                 return [timer1, timer2, timer3, timer4, timer5, timer6, timer7, timer8];
-            } else if (viewportWidth <= 1284 && viewportWidth >= 1051) { // grid 4 columns
+            } else if (viewportWidth <= 1284 && viewportWidth >= 1051) {
                 const timer1 = setTimeout(() => setVisibleItems(['html']), 375);
                 const timer2 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'css', 'js']), 750);
                 const timer3 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'mongodb', 'ts', 'bootstrap']), 1125);
@@ -55,7 +34,7 @@ export const Tecnologys = () => {
                 const timer7 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'vscode', 'github']), 2625);
                 const timer8 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'postman']), 3000);
                 return [timer1, timer2, timer3, timer4, timer5, timer6, timer7, timer8];
-            } else { // grid 3 columns
+            } else {
                 const timer1 = setTimeout(() => setVisibleItems(['html', 'css', 'bootstrap']), 428);
                 const timer2 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'tailwind', 'js', 'ts']), 856);
                 const timer3 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'react', 'next.js', 'mongodb']), 1284);
@@ -72,7 +51,7 @@ export const Tecnologys = () => {
         return () => {
             timerSet.forEach(timer => clearTimeout(timer));
         };
-    }, [isVisible]);
+    }, [isVisible, viewportWidth]);
 
     const handleResize = () => {
         setViewportWidth(window.innerWidth);
@@ -84,7 +63,6 @@ export const Tecnologys = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
 
     return (
         <section className='tecnologys-container' ref={tecnologysRef}>

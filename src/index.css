@@ -58,3 +58,23 @@ h6 {
   --red-color: #c70038;
   --gray-color: #747171;
 }
+
+.animated-color {
+  color: transparent;
+  background-image: linear-gradient(to left, var(--red-color), #ff5733, #ffc300, #ff1b1c, #ff4b2b, #ffc312);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: color 3s linear forwards;
+  background-size: 400% 100%;
+  -webkit-animation: color 3s linear forwards;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+    color: var(--red-color);
+  }
+}

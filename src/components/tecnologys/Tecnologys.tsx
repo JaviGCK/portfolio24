@@ -14,7 +14,17 @@ export const Tecnologys = () => {
     useEffect(() => {
         const setTechGroups = () => {
             setVisibleItems([]);
-            if (viewportWidth >= 1285) {
+            if (viewportWidth >= 1500) {
+                const timer1 = setTimeout(() => setVisibleItems(['html']), 375);
+                const timer2 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'react', 'css']), 750);
+                const timer3 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'vercel', 'next.js', 'bootstrap']), 1125);
+                const timer4 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'vscode', 'netlify', 'mongodb', 'tailwind']), 1500);
+                const timer5 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'postman', 'jenkin', 'postgress', 'js']), 1875);
+                const timer6 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'figma', 'github', 'auth0', 'ts']), 2250);
+                const timer7 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'git', 'cloudinary']), 2625);
+                const timer8 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'express']), 3000);
+                return [timer1, timer2, timer3, timer4, timer5, timer6, timer7, timer8];
+            } else if (viewportWidth >= 1285 && viewportWidth <= 1499) {
                 const timer1 = setTimeout(() => setVisibleItems(['html']), 375);
                 const timer2 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'ts', 'css']), 750);
                 const timer3 = setTimeout(() => setVisibleItems(prevItems => [...prevItems, 'auth0', 'react', 'bootstrap']), 1125);

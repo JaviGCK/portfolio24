@@ -148,21 +148,21 @@
 }
 
 .isVisible .container-img-card {
-    transition-delay: 0.2s;
+    transition-delay: 0.25s;
     opacity: 1;
 }
 
 .isVisible .container-tech-icon-card {
-    transition-delay: 0.3s;
-    opacity: 1;
-}
-
-.isVisible .description-card {
     transition-delay: 0.4s;
     opacity: 1;
 }
 
+.isVisible .description-card {
+    transition-delay: 0.55s;
+    opacity: 1;
+}
+
 .isVisible .container-links-card {
-    transition-delay: 0.5s;
+    transition-delay: 0.7s;
     opacity: 1;
 }

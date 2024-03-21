@@ -120,16 +120,49 @@
         flex-direction: column;
     }
 }
+/* styles to render card */
 
-.fade-in {
+.container-card {
     opacity: 0;
-    transform: translateY(20px);
-    transition:
-        opacity 3s ease,
-        transform 3s ease;
 }
 
-.fade-in.isVisible {
+.isVisible {
     opacity: 1;
-    transform: translateY(0);
+}
+
+.container-card > * {
+    opacity: 0;
+}
+
+.isVisible .container-card > * {
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+}
+
+.isVisible .header-card {
+    transition-delay: 0.1s;
+    opacity: 1;
+}
+
+.isVisible .container-img-card {
+    transition-delay: 0.2s;
+    opacity: 1;
+}
+
+.isVisible .container-tech-icon-card {
+    transition-delay: 0.3s;
+    opacity: 1;
+}
+
+.isVisible .description-card {
+    transition-delay: 0.4s;
+    opacity: 1;
+}
+
+.isVisible .container-links-card {
+    transition-delay: 0.5s;
+    opacity: 1;
 }

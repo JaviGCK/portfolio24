@@ -6,7 +6,7 @@
     display: flex;
     justify-content: flex-start;
     gap: 100px;
-    margin-bottom: 125px;
+    margin: 100px 0 125px 0;
 }
 
 @media (max-width: 1000px) {

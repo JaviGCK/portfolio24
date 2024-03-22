@@ -41,17 +41,6 @@ export const CardsData = () => {
             labels: [t('cards.labels.verFigma'), t('cards.labels.verGitHub')]
         },
         {
-            id: 'RICK&MORTY',
-            name: t('cards.RICK&MORTY.name'),
-            iconDevice: <PiDevicesLight />,
-            img: RickMortyImg,
-            icons: [<BiLogoJavascript />, <BiLogoTypescript />, <TbBrandBootstrap />],
-            description: t('cards.RICK&MORTY.description'),
-            iconsNav: [<SlSocialGithub />, <HiMiniArrowTopRightOnSquare />],
-            urls: ['https://github.com/JaviGCK/Rick-Morty-Api', 'https://rick-morty-api-sooty.vercel.app/'],
-            labels: [t('cards.labels.verGitHub'), t('cards.labels.verDeploy')]
-        },
-        {
             id: 'CALENDAR_TS',
             name: t('cards.CALENDAR_TS.name'),
             iconDevice: <PiDevicesLight />,
@@ -72,6 +61,17 @@ export const CardsData = () => {
             iconsNav: [<SlSocialGithub />],
             urls: ['https://github.com/JaviGCK/server_Movies'],
             labels: [t('cards.labels.verGitHub')]
+        },
+        {
+            id: 'RICK&MORTY',
+            name: t('cards.RICK&MORTY.name'),
+            iconDevice: <PiDevicesLight />,
+            img: RickMortyImg,
+            icons: [<BiLogoJavascript />, <BiLogoTypescript />, <TbBrandBootstrap />],
+            description: t('cards.RICK&MORTY.description'),
+            iconsNav: [<SlSocialGithub />, <HiMiniArrowTopRightOnSquare />],
+            urls: ['https://github.com/JaviGCK/Rick-Morty-Api', 'https://rick-morty-api-sooty.vercel.app/'],
+            labels: [t('cards.labels.verGitHub'), t('cards.labels.verDeploy')]
         },
         {
             id: 'DROP_DRAG_DEMON',

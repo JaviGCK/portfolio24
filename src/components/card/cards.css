@@ -1,7 +1,7 @@
 .container-cards-proyects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 150px;
     width: 100%;
     margin-bottom: 125px;
 }
@@ -10,7 +10,6 @@
     border: solid 1px var(--red-color);
     display: flex;
     flex-direction: column;
-    max-width: 500px;
 }
 
 .header-card {

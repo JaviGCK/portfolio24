@@ -10,6 +10,7 @@ export const Tecnologys = () => {
     const { isVisible, ref: tecnologysRef } = useVisibility();
     const [visibleItems, setVisibleItems] = useState<string[]>([]);
     const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         const setTechGroups = () => {
@@ -74,6 +75,11 @@ export const Tecnologys = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        setIsMobile(/iphone|ipad|ipod|android/.test(userAgent));
+    }, []);
+
     return (
         <section className='tecnologys-container' ref={tecnologysRef}>
             <h2 className='tecnologys-title'>{t('tecnologys.title')}</h2>
@@ -81,7 +87,7 @@ export const Tecnologys = () => {
                 {dataTech.map((tech) => (
                     <div
                         key={tech.id}
-                        className={`tech-item ${(viewportWidth <= 400 && viewportWidth > 0) || (isVisible && viewportWidth > 400 && visibleItems.includes(tech.id)) ? 'visible' : ''
+                        className={`tech-item ${isMobile || (isVisible && visibleItems.includes(tech.id)) ? 'visible' : ''
                             }`}
                     >
                         {tech.icon}

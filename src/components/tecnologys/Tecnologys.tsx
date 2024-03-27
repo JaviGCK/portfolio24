@@ -81,7 +81,8 @@ export const Tecnologys = () => {
                 {dataTech.map((tech) => (
                     <div
                         key={tech.id}
-                        className={`tech-item ${isVisible && visibleItems.includes(tech.id) ? 'visible' : ''}`}
+                        className={`tech-item ${(viewportWidth <= 400 && viewportWidth > 0) || (isVisible && viewportWidth > 400 && visibleItems.includes(tech.id)) ? 'visible' : ''
+                            }`}
                     >
                         {tech.icon}
                         <span className='tech-name'>{tech.name}</span>

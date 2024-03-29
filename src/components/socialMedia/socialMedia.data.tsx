@@ -20,7 +20,7 @@ export const socialMediaData = [
         id: 2,
         platform: "CV",
         icon: <BsFileEarmarkText />,
-        url: "https://drive.google.com/file/d/1RVHosjxRWQ5e93UdQANpp96Y5XBA6__A/view?usp=sharing",
+        url: "https://drive.google.com/file/d/1MuWoVpeMfGRA9J5j9WrFO3eLEvHAmIzn/view?usp=drive_link",
         label: "Descargar CV",
     }
 ];

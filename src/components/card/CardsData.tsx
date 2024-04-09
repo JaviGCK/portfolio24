@@ -95,7 +95,7 @@ export const CardsData = () => {
             iconsNav: [<SlSocialGithub />, <HiMiniArrowTopRightOnSquare />],
             urls: ['https://github.com/JaviGCK/todoReactNative'],
             labels: [t('cards.labels.verGitHub')]
-        }
+        },
 
     ];
 };

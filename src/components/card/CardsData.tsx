@@ -6,7 +6,7 @@ import movieshubImg from '../../assets/images/movieshub-next-copia.webp';
 import CalendarTsImg from '../../assets/images/calendar.webp';
 import ServerImg from '../../assets/images/server.webp';
 import DDDImg from '../../assets/images/destok.webp';
-import TDImg from '../../assets/images/todoreactnative.webp';
+import TDImg from '../../assets/images/todoRN.webp';
 import { TbBrandBootstrap, TbBrandMongodb, TbBrandNextjs, TbBrandReact } from 'react-icons/tb';
 import { SiExpressvpn, SiFigma } from 'react-icons/si';
 import { SlSocialGithub } from 'react-icons/sl';
@@ -87,7 +87,7 @@ export const CardsData = () => {
         },
         {
             id: 'TODOREACTNATIVE',
-            name: t('cards.DROP_DRAG_DEMON.name'),
+            name: t('cards.TODO_REACT_NATIVE.name'),
             iconDevice: <CiMobile2 />,
             img: TDImg,
             icons: [<TbBrandReact />, <BiLogoJavascript />, <BiLogoCss3 />],

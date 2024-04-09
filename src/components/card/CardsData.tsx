@@ -92,7 +92,7 @@ export const CardsData = () => {
             img: TDImg,
             icons: [<TbBrandReact />, <BiLogoJavascript />, <BiLogoCss3 />],
             description: t('cards.DROP_DRAG_DEMON.description'),
-            iconsNav: [<SlSocialGithub />, <HiMiniArrowTopRightOnSquare />],
+            iconsNav: [<SlSocialGithub />],
             urls: ['https://github.com/JaviGCK/todoReactNative'],
             labels: [t('cards.labels.verGitHub')]
         },

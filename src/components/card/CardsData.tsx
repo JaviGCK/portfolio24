@@ -6,6 +6,7 @@ import movieshubImg from '../../assets/images/movieshub-next-copia.webp';
 import CalendarTsImg from '../../assets/images/calendar.webp';
 import ServerImg from '../../assets/images/server.webp';
 import DDDImg from '../../assets/images/destok.webp';
+import TDImg from '../../assets/images/todoreactnative.webp';
 import { TbBrandBootstrap, TbBrandMongodb, TbBrandNextjs, TbBrandReact } from 'react-icons/tb';
 import { SiExpressvpn, SiFigma } from 'react-icons/si';
 import { SlSocialGithub } from 'react-icons/sl';
@@ -83,6 +84,17 @@ export const CardsData = () => {
             iconsNav: [<SlSocialGithub />, <HiMiniArrowTopRightOnSquare />],
             urls: ['https://github.com/JaviGCK/drag-and-drop', 'https://glittering-capybara-a60804.netlify.app/'],
             labels: [t('cards.labels.verGitHub'), t('cards.labels.verDeploy')]
+        },
+        {
+            id: 'TODOREACTNATIVE',
+            name: t('cards.DROP_DRAG_DEMON.name'),
+            iconDevice: <CiMobile2 />,
+            img: TDImg,
+            icons: [<TbBrandReact />, <BiLogoJavascript />, <BiLogoCss3 />],
+            description: t('cards.DROP_DRAG_DEMON.description'),
+            iconsNav: [<SlSocialGithub />, <HiMiniArrowTopRightOnSquare />],
+            urls: ['https://github.com/JaviGCK/todoReactNative'],
+            labels: [t('cards.labels.verGitHub')]
         }
 
     ];
